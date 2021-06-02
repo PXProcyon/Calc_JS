@@ -1,24 +1,26 @@
 
 
 
-$(document).ready(function() { // Ждём загрузки страницы	   
-	$("input[name=send]").click( function () { // Событие нажатия на кнопку "Расчёт"
-		var action = $("select[name=action]").val(); // Получаем значение действия, которое нужно выполнить
-		var first = $("input[name=first]").val() * 1; // Переменная первого числа
-		var second = $("input[name=second]").val() * 1; // Переменная второго числа
-		var result; // Переменная результата
-		if (action == '+') { // Если действие - сложение
-			result = first + second; //  складываем
+$(document).ready(function() { 	   
+	$("input[name=send]").click( function () { 
+		var action = $("select[name=action]").val(); 
+		var first = $("input[name=first]").val() * 1; 
+		var second = $("input[name=second]").val() * 1; 
+		var result; 
+		if (action == '+') { 
+			result = first + second; 
 		}
-		else if (action == '-'){ // Если действие вычитание
-			result = first - second; // вычитаем
+		else if (action == '-'){ 
+			result = first - second; 
 		}
-		else if (action == '*'){ // Если действие умножение
-			result = first * second; // умножаем
+		else if (action == '*'){ 
+			result = first * second;
 		}
-		else if (action == '/'){ // Если действие деления
-			result = first / second; // делим
+		else if (action == '/'){ 
+			result = first / second; 
 		}
-		$("input[name=result]").val(result); // записываем результат
+		else if (action == '^'){ 
+			result = Math.pow(first,second); 
+		$("input[name=result]").val(result); 
 	});
 });

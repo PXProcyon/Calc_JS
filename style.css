@@ -1,0 +1,93 @@
+body{ /*фоновое изображение загружаемых страниц*/
+	margin: 20px; /*Устанавливает величину отступа от каждого края элемента*/
+	padding: 0px; /*Устанавливает значение полей вокруг содержимого элемента*/
+	background-image: url(1.jpg);
+	background-color: #800000;
+	font-family: Times New Roman;
+	font-size: 20pt; /*Определяет размер шрифта элемента*/
+	}
+
+	#menu_body li ul{display:none}
+	#menu_body li:hover ul, #menu_body li.over ul{
+		display: block
+	}
+
+a:visited { /*гиперссылка*/
+	color: #800000;
+	}
+a:hover { /*гиперссылка*/
+	color: #ff000d;
+	background-color:rgb(0, 0, 0);
+	}
+h2{ /*тип шрифта в ячейке таблицы*/
+	font-size: 26px; /*Определяет размер шрифта элемента*/
+	font-weight: normal; /*Устанавливает насыщенность шрифта*/
+	margin-bottom: 0px; /*Устанавливает величину отступа от нижнего края элемента*/
+	color: #000080;
+	line-height: 140%; /*Устанавливает межстрочный интервал текста*/
+	}
+.d1{/*абсолютное положение на странице (блок с фото и текст)*/
+	position: absolute;
+	top: 28%;
+	left: 1%;
+	}
+.text{ /*заголовок загружаемой страницы*/
+	position: center;
+	top: 1%;
+	left: 20%;
+	font-size: 32pt; /*Определяет размер шрифта элемента*/
+	color: #000080;
+	text-align: center; /*Определяет горизонтальное выравнивание текста в пределах элемента.*/
+	letter-spacing: 12px; /*интервал между символами в пределах элемента*/
+	filter: Glow(Strength='6', color='#800000') /*glow - добавляет свечение вокруг эл-в.*/
+	}
+.link{
+	/*стиль для шрифта текста, который является гиперссылкой ("На главную")*/
+	position: absolute;
+	top: 94%;
+	left: 44%;
+	font-family: Times New Roman;
+	font-size: 14pt;
+	}
+
+ul {
+		list-style: none; 
+		margin: 0 auto;
+	}
+a {
+		text-decoration: none;
+		font-family: 'Lora', serif;
+		transition: .5s linear;
+ }
+i {
+		margin-right: 10px;
+	  }
+ nav {
+		display: block;
+		width: 660px;
+		margin: 0 auto 30px;
+	  }
+.one ul {
+		padding: 1em 0;
+		background: #ECDAD6;
+	  }
+.one a {
+		padding: 1em;
+		background: rgba(177, 152, 145, .3);
+		border-right: 1px solid #b19891;
+		color: #695753;
+	  }
+.one a:hover {background: #b19891;}
+.one li {
+		display: inline;
+	  }
+
+
+
+	
+	
+
+	
+		
+	
+	

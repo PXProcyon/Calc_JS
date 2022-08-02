@@ -1,6 +1,4 @@
 
-
-
 $(document).ready(function() { 	   
 	$("input[name=send]").click( function () { 
 		var action = $("select[name=action]").val(); 
